@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+}
+
+.container {
+    margin: 30px 70px;
+}
+
+.container .title {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-content: center;
+    margin: 50px 50px;
+    padding: 60px;
+    gap: 70px;
+}
+
+.hero img {
+    width: 450px;
+}
+
+.hero .info h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.hero .info p {
+    font-size: 2em;
+    margin-right: 150px;
+    margin-bottom: 40px;
+    color: #4F4F4F;
+}
+
+.info .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    width: 170px;
+    height: 50px;
+}
+
+.info .button a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+    .hero {
+        gap: 50px;
+    }
+
+    .hero img {
+        width: 330px;
+    }
+
+    .hero .info h1 {
+        font-size: 2.3em;
+    }
+
+    .hero .info p {
+        font-size: 1.1em;
+        margin-right: 1px;
+    }
+
+    .info .button {
+        width: 170px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin: 30px 40px;
+    }
+
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero .info h1 {
+        font-size: 3em;
+    }
+
+    .hero .info p {
+        font-size: 2em;
+    }
+
+    .info .button {
+        width: 170px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero img {
+        width: 250px;
+    }
+
+    .hero .info p {
+        font-size: 1.5em;
+    }
+
+    .info .button {
+        width: 170px;
+        height: 40px;
+    }
+}
