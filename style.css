@@ -57,11 +57,24 @@ body {
     height: 50px;
 }
 
+.info .button:hover {
+    background-color: #fff;
+    border: 3px solid #333;
+    color: #333;
+    transition: all 0.2s;
+}
+
 .info .button a {
     font-size: 1.1em;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: #fff;
+}
+
+.info .button a:hover {
+    background-color: #fff;
+    color: #333;
+    transition: all 0.2s;
 }
 
 .footer {
