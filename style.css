@@ -64,17 +64,11 @@ body {
     transition: all 0.2s;
 }
 
-.info .button a {
+.info a.button {
     font-size: 1.1em;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-}
-
-.info .button a:hover {
-    background-color: #fff;
-    color: #333;
-    transition: all 0.2s;
 }
 
 .footer {
